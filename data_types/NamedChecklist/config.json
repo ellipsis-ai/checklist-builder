@@ -1,0 +1,12 @@
+{
+  "exportId" : "372duBCLSYa2D8IBPJoc7g",
+  "name" : "NamedChecklist",
+  "responseTypeId" : "Normal",
+  "canBeMemoized" : false,
+  "isDataType" : true,
+  "isTest" : false,
+  "dataTypeConfig" : {
+    "fields" : [ ],
+    "usesCode" : true
+  }
+}

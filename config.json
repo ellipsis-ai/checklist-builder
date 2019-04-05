@@ -1,0 +1,8 @@
+{
+  "name" : "Checklist Builder",
+  "exportId" : "Mj0YVxfzQICJbqrQSKvpWQ",
+  "icon" : "☑️",
+  "requiredAWSConfigs" : [ ],
+  "requiredOAuthApiConfigs" : [ ],
+  "requiredSimpleTokenApis" : [ ]
+}

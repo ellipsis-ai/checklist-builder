@@ -1,0 +1,71 @@
+[ {
+  "exportId" : "0FhorKxbSTSRzfmgBR7fbQ",
+  "name" : "question",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What's the new question?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "8KgW67PNSRefo3d8hR0z_w",
+  "name" : "skillId",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `skillId`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "8PFUiWzLTzeL4uLb08mxoQ",
+  "name" : "question2",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What do you want the second question to be?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "PWqalGf5SdCdlw2ZS4H3SA",
+  "name" : "question1",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What do you want the first question to be?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "RzEDOMgCTPevtd-0prJOxA",
+  "name" : "firstQuestion",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the first question?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "q4mvrQK5SE6G8lHYOTKCOg",
+  "name" : "skillId",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `skillId`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "t_pppEXRQg-aRCUejlTYog",
+  "name" : "name",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the name of your new checklist?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+} ]

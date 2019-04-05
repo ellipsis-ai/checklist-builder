@@ -1,0 +1,26 @@
+{
+  "exportId" : "S-1IfOZ4S1qoJhohl6219Q",
+  "name" : "Checklist",
+  "responseTypeId" : "Normal",
+  "canBeMemoized" : false,
+  "isDataType" : true,
+  "isTest" : false,
+  "dataTypeConfig" : {
+    "fields" : [ {
+      "name" : "skillId",
+      "fieldType" : {
+        "exportId" : "Text",
+        "name" : "Text"
+      },
+      "isLabel" : false
+    }, {
+      "name" : "ownerId",
+      "fieldType" : {
+        "exportId" : "Text",
+        "name" : "Text"
+      },
+      "isLabel" : false
+    } ],
+    "usesCode" : false
+  }
+}
