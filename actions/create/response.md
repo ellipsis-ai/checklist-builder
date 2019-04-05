@@ -1,5 +1,5 @@
-OK, you can edit your new checklist is at 
+OK, you can edit your new checklist at 
 
-{successResult}
+{successResult.editUrl}
 
-Or run it by typing `…run checklist`
+Or run it by typing `…{successResult.trigger}`
