@@ -10,22 +10,15 @@ skills.createNewChecklist(name, firstQuestion).then(json => {
       editUrl: editUrl,
       trigger: trigger
     }, {
-      choices: [
-        { 
-          actionName: 'addQuestion', 
-          label: 'Add a question', 
-          args: [
-            {
-              name: 'skillId',
-              value: json.id
-            }
-          ]
-        },
-        {
-          actionName: 'listChecklists',
-          label: 'List my checklists'
-        }
-      ]
+      next: { 
+        actionName: 'displayActions', 
+        args: [
+          {
+            name: 'skillId',
+            value: json.id
+          }
+        ]
+      }
     });
   });
 })
