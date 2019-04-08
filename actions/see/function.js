@@ -7,9 +7,14 @@ fetch(url)
   .then(res => res.json())
   .then(json => {
     const skillData = json.skill;
-    ellipsis.success(skillData.actionInputs.map(ea => {
+    const successResult = skillData.actionInputs.map(ea => {
       return ea.question;
-    }
-  ));
-});
+    });
+    ellipsis.success(successResult, {
+      next: {
+        actionName: 'displayActions',
+        args: [{ name: 'skillId', value: checklist.id }]
+      }
+    });
+  });
 }
