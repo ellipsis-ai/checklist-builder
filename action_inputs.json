@@ -49,13 +49,13 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
-  "exportId" : "onhZzdtxRkOCHa_GhTEmEA",
-  "name" : "trigger",
+  "exportId" : "ST-a3xPzSvOVnHUWyEONog",
+  "name" : "skillId",
   "paramType" : {
     "exportId" : "Text",
     "name" : "Text"
   },
-  "question" : "How do you want to trigger your new checklist? (e.g. `",
+  "question" : "What is the value for `skillId`?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
