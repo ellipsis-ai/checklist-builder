@@ -10,32 +10,12 @@
   "isSavedForUser" : false
 }, {
   "exportId" : "8KgW67PNSRefo3d8hR0z_w",
-  "name" : "skillId",
+  "name" : "checklist",
   "paramType" : {
-    "exportId" : "Text",
-    "name" : "Text"
+    "exportId" : "372duBCLSYa2D8IBPJoc7g",
+    "name" : "NamedChecklist"
   },
-  "question" : "What is the value for `skillId`?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "8PFUiWzLTzeL4uLb08mxoQ",
-  "name" : "question2",
-  "paramType" : {
-    "exportId" : "Text",
-    "name" : "Text"
-  },
-  "question" : "What do you want the second question to be?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "PWqalGf5SdCdlw2ZS4H3SA",
-  "name" : "question1",
-  "paramType" : {
-    "exportId" : "Text",
-    "name" : "Text"
-  },
-  "question" : "What do you want the first question to be?",
+  "question" : "For which checklist?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {

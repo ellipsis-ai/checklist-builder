@@ -1,8 +1,7 @@
-function(skillId, ellipsis) {
+function(checklist, ellipsis) {
   const fetch = require('node-fetch');
 
-const targetSkillId = 'RfOFZWi0QAOQtgBHTbJS2g';
-const url = `${ellipsis.apiBaseUrl}/api/v1/skill_editing_context/${ellipsis.token}?skillId=${skillId}`;
+const url = `${ellipsis.apiBaseUrl}/api/v1/skill_editing_context/${ellipsis.token}?skillId=${checklist.id}`;
 
 fetch(url)
   .then(res => res.json())
