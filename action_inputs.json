@@ -49,6 +49,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "s_Wwk30-QXS3hx7vuSNgIw",
+  "name" : "skillId",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `skillId`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "t_pppEXRQg-aRCUejlTYog",
   "name" : "name",
   "paramType" : {
