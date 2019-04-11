@@ -1,6 +1,8 @@
 function(skillId, ellipsis) {
-  ellipsis.success("", {
-  choices: [
+  const skills = require('skills')(ellipsis);
+
+skills.isDeployed(skillId).then( isDeployed => {
+  let choices = [
     { 
       actionName: 'runChecklist', 
       label: 'Run the checklist', 
@@ -26,6 +28,18 @@ function(skillId, ellipsis) {
       allowMultipleSelections: true,
       allowOthers: true
     }
-  ]
+  ];
+  if (!isDeployed) {
+    choices = choices.concat([{
+      actionName: 'deploy',
+      args: [{ name: 'skillId', value: skillId }],
+      label: 'Deploy',
+      allowMultipleSelections: false,
+      allowOthers: true
+    }]);
+  }
+  ellipsis.success("", {
+    choices: choices
+  });
 });
 }
