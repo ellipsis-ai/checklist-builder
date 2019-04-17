@@ -1,0 +1,7 @@
+[ {
+  "text" : "update questions from sheet {sheetId} {checklist}",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false,
+  "triggerType" : "MessageSent"
+} ]
