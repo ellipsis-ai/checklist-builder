@@ -32,7 +32,7 @@ skills.isDeployed(skillId).then( isDeployed => {
       allowOthers: true
     }
   ];
-  if (!isDeployed) {
+  if (false && !isDeployed) { // disabled for now
     choices = choices.concat([{
       actionName: 'deploy',
       args: [{ name: 'skillId', value: skillId }],
