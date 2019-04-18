@@ -6,15 +6,12 @@ skills.createNewChecklist(name, firstQuestion).then(json => {
   savedChecklists.saveChecklistFor(json.id).then(res => {
     const editUrl = `${ellipsis.apiBaseUrl}/edit_skill/${json.id}`;
     const trigger = json.behaviorVersions[0].triggers[0].text;
-    ellipsis.success({
-      editUrl: editUrl,
-      trigger: trigger
-    }, {
+    ellipsis.success(`OK, I created ${name}`, {
       next: { 
-        actionName: 'displayActions', 
+        actionName: 'view', 
         args: [
           {
-            name: 'skillId',
+            name: 'checklist',
             value: json.id
           }
         ]

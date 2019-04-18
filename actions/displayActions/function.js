@@ -12,7 +12,7 @@ skills.isDeployed(skillId).then( isDeployed => {
     },
     { 
       actionName: 'addQuestion', 
-      label: 'Add a question', 
+      label: 'Add a question in chat', 
       args: [
         {
           name: 'skillId',

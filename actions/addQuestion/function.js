@@ -3,12 +3,12 @@ function(skillId, question, ellipsis) {
 
 skills.addQuestion(skillId, question).then(json => {
   const editUrl = `${ellipsis.apiBaseUrl}/edit_skill/${json.id}`;
-  ellipsis.success(editUrl, {
+  ellipsis.success("Added.", {
     next: {
-      actionName: 'displayActions', 
+      actionName: 'view', 
       args: [
         {
-          name: 'skillId',
+          name: 'checklist',
           value: skillId
         }
       ]
