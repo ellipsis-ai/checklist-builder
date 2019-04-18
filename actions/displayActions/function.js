@@ -23,8 +23,11 @@ skills.isDeployed(skillId).then( isDeployed => {
       allowOthers: true
     },
     {
-      actionName: 'listChecklists',
-      label: 'List my checklists',
+      actionName: 'updateQuestionsFromSheet',
+      label: 'Update questions in a Sheet',
+      args: [
+        { name: 'skillId', value: skillId }
+      ],
       allowMultipleSelections: true,
       allowOthers: true
     }
