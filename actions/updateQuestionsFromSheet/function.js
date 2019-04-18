@@ -1,18 +1,27 @@
-function(checklist, sheetId, ellipsis) {
+function(skillId, ellipsis) {
   const skills = require('skills')(ellipsis);
 const sheets = require('sheets-helpers')(ellipsis);
-const skillId = checklist.id;
 
-sheets.getQuestionsIn(sheetId).then(questions => {
-  skills.replaceQuestions(skillId, questions).then(json => {
-    ellipsis.success('Done!', {
-      next: {
-        actionName: 'displayActions',
-        args: [
-          { name: 'skillId', value: skillId }
+sheets.create().then(createResult => {
+  const data = createResult.data;
+  skills.getInputs(skillId).then(inputs => {
+    sheets.putQuestions(data.spreadsheetId, inputs.map(ea => ea.question)).then(updateResult => {
+      ellipsis.success(data.spreadsheetUrl, {
+        choices: [
+          {
+            actionName: 'pullQuestionsFromSheet',
+            label: 'Update checklist questions',
+            allowMultipleSelections: true,
+            allowOthers: true,
+            args: [
+              { name: 'skillId', value: skillId },
+              { name: 'sheetId', value: data.spreadsheetId }
+            ]
+          }
         ]
-      }
+      });
     });
   });
+  
 });
 }

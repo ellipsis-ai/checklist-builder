@@ -19,16 +19,6 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
-  "exportId" : "Ma77ZWJ7Sxm8CL9pZVVzTw",
-  "name" : "sheetId",
-  "paramType" : {
-    "exportId" : "Text",
-    "name" : "Text"
-  },
-  "question" : "What is the Google Sheet ID?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
   "exportId" : "RzEDOMgCTPevtd-0prJOxA",
   "name" : "firstQuestion",
   "paramType" : {
@@ -49,13 +39,33 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
-  "exportId" : "j3_aMhojQGe54j50FVI1Iw",
-  "name" : "checklist",
+  "exportId" : "_GchX6F8RzSFNNWEGWsk6g",
+  "name" : "skillId",
   "paramType" : {
-    "exportId" : "372duBCLSYa2D8IBPJoc7g",
-    "name" : "NamedChecklist"
+    "exportId" : "Text",
+    "name" : "Text"
   },
-  "question" : "For which checklist?",
+  "question" : "What is the value for `skillId`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "j3_aMhojQGe54j50FVI1Iw",
+  "name" : "skillId",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `skillId`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "ne4fpl8-SouEuDkp2cW4Mw",
+  "name" : "sheetId",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `sheetId`?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
