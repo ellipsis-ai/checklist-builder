@@ -5,7 +5,12 @@ const sheets = require('sheets-helpers')(ellipsis);
 sheets.create().then(createResult => {
   const data = createResult.data;
   skills.getInputs(skillId).then(inputs => {
-    sheets.putQuestions(data.spreadsheetId, inputs.map(ea => ea.question)).then(updateResult => {
+    const permalink = ellipsis.event.message ? ellipsis.event.message.permalink : undefined;
+    const heading = 
+      permalink ?
+        `=HYPERLINK("${permalink}", "Edit the questions below. Once you're done, click here to return to Slack and update your checklist")` :
+        `Edit the questions below. Once you're done, return to Slack and update your checklist`;
+    sheets.putQuestions(data.spreadsheetId, inputs.map(ea => ea.question), heading).then(updateResult => {
       ellipsis.success(data.spreadsheetUrl, {
         choices: [
           {
