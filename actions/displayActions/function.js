@@ -1,46 +1,38 @@
 function(skillId, ellipsis) {
   const skills = require('skills')(ellipsis);
 
-skills.isDeployed(skillId).then( isDeployed => {
-  let choices = [
-    { 
+skills.hasQuestions(skillId).then( hasQuestions => {
+  const choices = [];
+  if (hasQuestions) {
+    choices.push({ 
       actionName: 'runChecklist', 
       label: 'Run the checklist', 
       allowMultipleSelections: true,
       allowOthers: true,
       skillId: skillId
-    },
-    { 
-      actionName: 'addQuestion', 
-      label: 'Add a question in chat', 
-      args: [
-        {
-          name: 'skillId',
-          value: skillId
-        }
-      ],
-      allowMultipleSelections: true,
-      allowOthers: true
-    },
-    {
-      actionName: 'updateQuestionsFromSheet',
-      label: 'Update questions in a Sheet',
-      args: [
-        { name: 'skillId', value: skillId }
-      ],
-      allowMultipleSelections: true,
-      allowOthers: true
-    }
-  ];
-  if (false && !isDeployed) { // disabled for now
-    choices = choices.concat([{
-      actionName: 'deploy',
-      args: [{ name: 'skillId', value: skillId }],
-      label: 'Deploy',
-      allowMultipleSelections: false,
-      allowOthers: true
-    }]);
+    });
   }
+  choices.push({ 
+    actionName: 'addQuestion', 
+    label: 'Add a question in chat', 
+    args: [
+      {
+        name: 'skillId',
+        value: skillId
+      }
+    ],
+    allowMultipleSelections: true,
+    allowOthers: true
+  });
+  choices.push({
+    actionName: 'updateQuestionsFromSheet',
+    label: 'Update questions in a Sheet',
+    args: [
+      { name: 'skillId', value: skillId }
+    ],
+    allowMultipleSelections: true,
+    allowOthers: true
+  });
   ellipsis.success("", {
     choices: choices
   });
